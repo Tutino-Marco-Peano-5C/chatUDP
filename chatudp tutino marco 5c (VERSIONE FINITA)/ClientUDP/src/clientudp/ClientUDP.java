@@ -10,6 +10,7 @@ package clientudp;
  * @author MULTIMEDIALE26
  */
 
+/*librerie*/
 import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.util.logging.Level;
@@ -23,9 +24,12 @@ public class ClientUDP {
      */
     public static void main(String[] args)throws UnknownHostException {
         // TODO code application logic here
+        /*new runnable serve per lanciare il programma*/
           new Runnable(){
-         
+                  
                   @Override
+              /*metodo per lanciare il programma e gestire le eccezioni(try catch)*/
+              
             public void run() {
                 try{
                     new ClientGUI();

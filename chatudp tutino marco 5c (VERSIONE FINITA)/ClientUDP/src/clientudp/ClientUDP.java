@@ -34,7 +34,8 @@ public class ClientUDP {
                 try{
                     new ClientGUI();
                 }catch(SocketException | UnknownHostException e){
-                      Logger.getLogger(ClientGUI.class.getName()).log(Level.SEVERE, null, e);
+                     /* il logger è un preset del try catch*/
+                    Logger.getLogger(ClientGUI.class.getName()).log(Level.SEVERE, null, e);
                 }
             }
         }.run();
